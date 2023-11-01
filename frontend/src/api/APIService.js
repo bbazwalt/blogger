@@ -1,7 +1,10 @@
+import { API_URL } from "./apiURL";
+
+
 export default class APIService {
   static InsertArticle(body, token) {
     return fetch(
-      "https://blogrestapione-62340a74dd4b.herokuapp.com/articles/",
+      API_URL+ "articles/",
       {
         method: "POST",
         headers: {
@@ -15,7 +18,7 @@ export default class APIService {
 
   static RegisterUser(body) {
     return fetch(
-      "https://blogrestapione-62340a74dd4b.herokuapp.com/dj-rest-auth/registration/",
+      API_URL+"dj-rest-auth/registration/",
       {
         method: "POST",
         headers: {
@@ -28,7 +31,7 @@ export default class APIService {
 
   static UpdateArticle(article_slug, body, token) {
     return fetch(
-      `https://blogrestapione-62340a74dd4b.herokuapp.com/articles/${article_slug}/`,
+      API_URL+`articles/${article_slug}/`,
       {
         method: "PUT",
         headers: {
@@ -42,7 +45,7 @@ export default class APIService {
 
   static DeleteArticle(article_slug, token) {
     return fetch(
-      `https://blogrestapione-62340a74dd4b.herokuapp.com/articles/${article_slug}/`,
+      API_URL+`articles/${article_slug}/`,
       {
         method: "DELETE",
         headers: {

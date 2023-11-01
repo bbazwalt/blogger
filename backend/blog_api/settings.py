@@ -25,7 +25,7 @@ SECRET_KEY = ''
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['blogrestapione-62340a74dd4b.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['.vercel.app','now.sh','127.0.0.1','localhost']
 
 
 # Application definition
@@ -68,7 +68,7 @@ ROOT_URLCONF = 'blog_api.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR,'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -85,9 +85,8 @@ WSGI_APPLICATION = 'blog_api.wsgi.application'
 
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
-    "https://blogger-full-stack-0dd8c771404f.herokuapp.com/"
-
+"http://localhost:3000",
+"https://blogger-dj-react.vercel.app/"
 ]
 
 

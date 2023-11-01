@@ -1,0 +1,1 @@
+export const API_URL = "https://blogger-dj-api.vercel.app/";

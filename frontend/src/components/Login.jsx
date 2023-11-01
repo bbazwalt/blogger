@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { API_URL } from "../api/apiURL";
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -10,7 +11,7 @@ const Login = () => {
 
   const login = () => {
     fetch(
-      "https://blogrestapione-62340a74dd4b.herokuapp.com/dj-rest-auth/login/",
+      API_URL+"dj-rest-auth/login/",
       {
         method: "POST",
         headers: {
@@ -32,7 +33,7 @@ const Login = () => {
   };
 
   return (
-    <div className="container mt-4">
+    <div className="container mt-4 login-style">
       <br />
 
       {error ? (

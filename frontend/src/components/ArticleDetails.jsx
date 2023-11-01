@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import APIService from "../api/APIService";
 import { useNavigate } from "react-router-dom";
+import { API_URL } from "../api/apiURL";
 
 const ArticleDetails = (props) => {
   const params = useParams();
@@ -14,7 +15,7 @@ const ArticleDetails = (props) => {
 
   useEffect(() => {
     fetch(
-      `https://blogrestapione-62340a74dd4b.herokuapp.com/articles/${params.slug}/`,
+      API_URL+`articles/${params.slug}/`,
       {
         method: "GET",
         headers: {
@@ -30,7 +31,7 @@ const ArticleDetails = (props) => {
 
   useEffect(() => {
     fetch(
-      "https://blogrestapione-62340a74dd4b.herokuapp.com/dj-rest-auth/user/",
+      API_URL+"dj-rest-auth/user/",
       {
         method: "GET",
         headers: {

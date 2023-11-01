@@ -12,6 +12,7 @@ import UpdateArticle from "./components/UpdateArticle";
 import Chat from "./components/Chat";
 
 import "./App.css";
+import { API_URL } from "./api/apiURL";
 
 const App = () => {
   const [articles, setArticles] = useState([]);
@@ -26,7 +27,7 @@ const App = () => {
       navigate("/");
       return;
     } else {
-      fetch("https://blogrestapione-62340a74dd4b.herokuapp.com/articles/", {
+      fetch(API_URL+"articles/", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
