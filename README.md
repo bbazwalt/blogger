@@ -1,12 +1,12 @@
 # blogger-full-stack
 
-Blogger Web App • Live Link: https://blogger-full-stack-0dd8c771404f.herokuapp.com/
+Blogger Web App • Live Link: https://blogger-dj-react.vercel.app/
 
-• Tech Stack: Django, JavaScript, React, Bootstrap, PostgreSQL, Amazon Web Services (AWS), Google Cloud Platform (GCP), Heroku
+• Tech Stack: Django, JavaScript, React, Bootstrap, PostgreSQL, Google Cloud Platform (GCP), Vercel, Railway
 
-• Implemented blogging features like reading, adding, updating, deleting articles with Login & Signup. Deployed app on Heruko
+• Implemented blogging features like reading, adding, updating, deleting articles with Login & Signup. Deployed app on Vercel
 
-• Used External API endpoints like AWS PostgreSQL server, GCP Dialogflow chatbot using Kommunicate. Wrote REST APIs using Django REST Framework
+• Used External API endpoints like Railway PostgreSQL server, GCP Dialogflow chatbot using Kommunicate. Wrote REST APIs using Django REST Framework
 
 
 ## Login Page:
