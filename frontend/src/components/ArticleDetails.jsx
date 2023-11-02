@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { API_URL } from "../api/apiURL";
-import { deleteArticle } from "../api/APIService";
+import { deleteArticle } from "../api/apiService";
 
 const ArticleDetails = (props) => {
   const params = useParams();
