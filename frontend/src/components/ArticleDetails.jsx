@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
-import APIService from "../api/APIService";
 import { useNavigate } from "react-router-dom";
 import { API_URL } from "../api/apiURL";
+import { deleteArticle } from "../api/APIService";
 
 const ArticleDetails = (props) => {
   const params = useParams();
@@ -50,7 +50,7 @@ const ArticleDetails = (props) => {
   };
 
   const deleteBtn = (article) => {
-    APIService.DeleteArticle(article.slug, token)
+    deleteArticle(article.slug, token)
       .then(() => {
         props.deleteBtn(article);
         navigate("/articles");

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import APIService from "../api/APIService";
 import { useNavigate } from "react-router-dom";
+import { insertArticle } from "../api/APIService";
 
 const AddArticle = (props) => {
   const [title, setTitle] = useState("");
@@ -17,7 +17,7 @@ const AddArticle = (props) => {
       return;
     }
 
-    APIService.InsertArticle({ title, description }, token).then((result) => {
+    insertArticle({ title, description }, token).then((result) => {
       props.insertedArticle(result);
       navigate("/articles");
     });

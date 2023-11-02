@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import APIService from "../api/APIService";
 import { useNavigate } from "react-router-dom";
 
 const UpdateArticle = (props) => {
@@ -16,7 +15,7 @@ const UpdateArticle = (props) => {
   }, [props.article]);
 
   const updateArticle = () => {
-    APIService.UpdateArticle(props.article.slug, { title, description }, token)
+    updateArticle(props.article.slug, { title, description }, token)
       .then((resp) => {
         props.updatedData(resp);
         navigate("/articles");
