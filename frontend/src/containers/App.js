@@ -2,17 +2,19 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 
-import ArticleList from "./components/ArticleList";
-import Navbar from "./components/Navbar";
-import Login from "./components/Login";
-import ArticleDetails from "./components/ArticleDetails";
-import AddArticle from "./components/AddArticle";
-import Register from "./components/Register";
-import UpdateArticle from "./components/UpdateArticle";
-import Chat from "./components/Chat";
+import ArticleList from "../pages/ArticleList";
+import Login from "../pages/Login";
+import ArticleDetails from "../pages/ArticleDetails";
+import AddArticle from "../pages/AddArticle";
+import Register from "../pages/Register";
+import UpdateArticle from "../pages/UpdateArticle";
 
-import "./App.css";
-import { API_URL } from "./api/apiURL";
+import Navbar from "../components/Navbar";
+import Chat from "../components/Chat";
+
+
+import "../styles/App.css";
+import { API_URL } from "../api/apiURL";
 
 const App = () => {
   const [articles, setArticles] = useState([]);
