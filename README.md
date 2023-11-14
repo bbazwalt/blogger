@@ -2,11 +2,11 @@
 
 Blogger Web App • Live Link: https://blogger-dj-react.vercel.app/
 
-• Tech Stack: Django, JavaScript, React, Bootstrap, PostgreSQL, Google Cloud Platform (GCP), Vercel, Railway
+• Tech Stack: Django, JavaScript, React, Bootstrap, PostgreSQL, Google Cloud Platform (GCP), Vercel & Railway
 
-• Implemented blogging features like reading, adding, updating, deleting articles with Login & Signup. Deployed app on Vercel
+• Implemented blog functionalities such as reading, adding, updating & deleting articles, supported by secure Login & Signup. Deployed the application on Vercel
 
-• Used External API endpoints like Railway PostgreSQL server, GCP Dialogflow chatbot using Kommunicate. Wrote REST APIs using Django REST Framework
+• Utilized external API endpoints such as the Railway PostgreSQL server & integrated a GCP Dialogflow chatbot using Kommunicate. Developed REST APIs leveraging Django REST Framework
 
 
 ## Login Page:
