@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React, { useEffect } from "react";
 
-class Chat extends Component {
-  componentDidMount() {
+const Chat = () => {
+  useEffect(() => {
     (function (d, m) {
       var kommunicateSettings = {
         appId: "",
@@ -18,11 +18,9 @@ class Chat extends Component {
       m._globals = kommunicateSettings;
     })(document, window.kommunicate || {});
     /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
-  }
+  });
 
-  render() {
-    return <div></div>;
-  }
-}
+  return <div></div>;
+};
 
 export default Chat;
