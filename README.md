@@ -6,7 +6,7 @@ Blogger Web App • Live Link: https://blogger-dj-react.vercel.app/
 
 • Implemented blog functionalities such as reading, adding, updating & deleting articles, chatbot integration, supported by secure Login & Signup. Deployed the application on Vercel.
 
-•  Utilized external API endpoints such as the integration a GCP Dialogflow chatbot using Kommunicate which can improve user experience, engagement, satisfaction, personalization, retention, support, monetization up to 20%.
+•  Utilized external API endpoints such as the integration of GCP Dialogflow chatbot using Kommunicate which can improve user experience, engagement, satisfaction, personalization, retention, support, monetization up to 20%.
 
 
 ## Login Page:
