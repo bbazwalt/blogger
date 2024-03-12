@@ -25,7 +25,7 @@ SECRET_KEY = ''
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['.vercel.app','now.sh','127.0.0.1','localhost']
+ALLOWED_HOSTS = ['now.sh','127.0.0.1','localhost']
 
 
 # Application definition
@@ -86,7 +86,6 @@ WSGI_APPLICATION = 'blog_api.wsgi.application'
 
 CORS_ALLOWED_ORIGINS = [
 "http://localhost:3000",
-"https://blogger-dj-react.vercel.app/"
 ]
 
 
