@@ -1,26 +1,26 @@
-# blogger-full-stack
+# blogger
 
-Blogger Web App • Live Link: https://blogger-dj-react.vercel.app/
+Blogger Web App
 
-• Tech Stack: Django, JavaScript, React, Bootstrap, PostgreSQL, Google Cloud Platform (GCP) & Vercel.
+• Tech Stack: Django, JavaScript, React, Bootstrap & PostgreSQL.
 
-• Implemented blog functionalities such as reading, adding, updating & deleting articles, chatbot integration, supported by secure Login & Signup. Deployed the application on Vercel.
+• Implemented blog functionalities such as adding, updating & deleting articles, chatbot integration, login & sign up.
 
-•  Utilized external API endpoints such as the integration of GCP Dialogflow chatbot using Kommunicate which can improve user experience, engagement, satisfaction, personalization, retention, support, monetization up to 20%.
+• Utilized external API endpoints such as the integration of GCP Dialogflow chatbot using Kommunicate.
 
 
 ## Login Page:
 
-![Alt text](https://github.com/bbazwalt/blogger-full-stack/blob/main/screenshots/login-page.png)
+![Login Page](https://github.com/bbazwalt/blogger/blob/main/screenshots/login-page.png)
 
 ## Home Page:
 
-![Alt text](https://github.com/bbazwalt/blogger-full-stack/blob/main/screenshots/home-page.png)
+![Home Page](https://github.com/bbazwalt/blogger/blob/main/screenshots/home-page.png)
 
 ## Add Article Page:
 
-![Alt text](https://github.com/bbazwalt/blogger-full-stack/blob/main/screenshots/add-article-page.png)
+![Add Article Page](https://github.com/bbazwalt/blogger/blob/main/screenshots/add-article-page.png)
 
 ## ChatBot Conversation:
 
-![Alt text](https://github.com/bbazwalt/blogger-full-stack/blob/main/screenshots/chatbot-conversation.png)
+![ChatBot Conversation](https://github.com/bbazwalt/blogger/blob/main/screenshots/chatbot-conversation.png)
