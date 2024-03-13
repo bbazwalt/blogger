@@ -6,8 +6,6 @@ Blogger Web App
 
 • Implemented blog functionalities such as adding, updating & deleting articles, chatbot integration, login & sign up.
 
-• Utilized external API endpoints such as the integration of GCP Dialogflow chatbot using Kommunicate.
-
 
 ## Login Page:
 
