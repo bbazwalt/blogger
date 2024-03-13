@@ -25,7 +25,7 @@ SECRET_KEY = ''
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['now.sh','127.0.0.1','localhost']
+ALLOWED_HOSTS = ['127.0.0.1','localhost']
 
 
 # Application definition
@@ -93,14 +93,9 @@ CORS_ALLOWED_ORIGINS = [
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': '',
-        'HOST': '',
-        'PORT': '',
-        'USER': '',
-        'PASSWORD': ''
-    }
+  'default': {
+    'ENGINE': 'django.db.backends.postgresql',
+  }
 }
 
 

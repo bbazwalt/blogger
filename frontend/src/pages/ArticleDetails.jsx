@@ -1,8 +1,7 @@
-import { useState, useEffect } from "react";
-import { useParams, Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
-import { API_URL } from "../api/apiURL";
+import { useEffect, useState } from "react";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { deleteArticle } from "../api/apiService";
+import { API_URL } from "../api/apiURL";
 
 const ArticleDetails = (props) => {
   const params = useParams();
@@ -14,32 +13,26 @@ const ArticleDetails = (props) => {
   let navigate = useNavigate();
 
   useEffect(() => {
-    fetch(
-      API_URL+`articles/${params.slug}/`,
-      {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Token ${token}`,
-        },
-      }
-    )
+    fetch(API_URL + `articles/${params.slug}/`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Token ${token}`,
+      },
+    })
       .then((resp) => resp.json())
       .then((result) => setArticle(result))
       .catch((error) => console.log(error));
   }, [params.slug, token]);
 
   useEffect(() => {
-    fetch(
-      API_URL+"dj-rest-auth/user/",
-      {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Token ${token}`,
-        },
-      }
-    )
+    fetch(API_URL + "dj-rest-auth/user/", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Token ${token}`,
+      },
+    })
       .then((resp) => resp.json())
       .then((result) => setReq(result))
       .catch((error) => console.log(error));
