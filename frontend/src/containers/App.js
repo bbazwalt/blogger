@@ -10,7 +10,6 @@ import Register from "../pages/Register";
 import UpdateArticle from "../pages/UpdateArticle";
 
 import Navbar from "../components/Navbar";
-import Chat from "../components/Chat";
 
 
 import "../styles/App.css";
@@ -81,7 +80,6 @@ const App = () => {
 
   return (
     <div>
-      <Chat />
       <Navbar />
       <Routes>
         <Route path="/" element={<Login />}></Route>
