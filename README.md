@@ -4,7 +4,7 @@ Blogger Web App
 
 • Tech Stack: Django, JavaScript, React, Bootstrap & PostgreSQL.
 
-• Implemented blog functionalities such as adding, updating & deleting articles, chatbot integration, login & sign up.
+• Implemented blog functionalities such as adding, updating & deleting articles, login & sign up.
 
 
 ## Login Page:
